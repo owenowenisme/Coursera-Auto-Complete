@@ -1,7 +1,3 @@
-console.log("i am background script");
-function sleep(time) {
-    return new Promise(resolve => setTimeout(resolve, time));
-  }
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.action == "getDoc"){
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
