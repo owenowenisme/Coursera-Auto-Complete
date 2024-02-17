@@ -1,5 +1,3 @@
-console.log('I am popup.js');
-
 document.addEventListener('DOMContentLoaded', function() {
     var startButton = document.getElementById('start');
     var statusDiv = document.getElementById('status'); // Get the status div
