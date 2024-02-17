@@ -15,17 +15,15 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
               }
               console.log(itemId);
           })});
-        //   userId = 148021433;
           courseName = JSON.parse(document.querySelector('[data-testid="named-item-list-list"] li div a').getAttribute('data-click-value')).href.split('/')[2];
           console.log({
-            // userId: appData.context.dispatcher.stores.ApplicationStore.userData.id,
             itemId: itemId,
             courseName: courseName
         });
         itemId.forEach((id) => {
             fetch(`https://www.coursera.org/api/opencourse.v1/user/${userId}/course/${courseName}/item/${id}/lecture/videoEvents/ended?autoEnroll=false`, {
                 method: 'POST',
-                credentials: 'include', // For including cookies automatically
+                credentials: 'include', 
                 headers: {
                     'authority': 'www.coursera.org',
                     'accept': '*/*',
@@ -54,7 +52,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         });
         sendResponse("ok");
         setTimeout(function(){ location.reload(); }, 1000);
-        return true; // Keep the message channel open for the async response
+        return true; 
     }
   });
   
