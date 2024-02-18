@@ -19,3 +19,6 @@ A chrome extension that can help you finish all the video and reading instantly!
 **WAP BAP BOOM ALAKAZAM!🪄✨✨**
 
 The video will be shown as finished.
+
+## Troubleshooting
+**If it's not working, please reload your site and click start button again.**
