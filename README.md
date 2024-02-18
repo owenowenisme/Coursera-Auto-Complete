@@ -1,7 +1,7 @@
 
-# Coursera Video Helper
+# Coursera Auto Complete
 
-A chrome extension that can help you finish all the video instantly!
+A chrome extension that can help you finish all the video and reading instantly!
 
 ![Logo](./images/128.png
 )
