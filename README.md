@@ -1,5 +1,8 @@
+# Announcement
+Merged to Eric Hung's [Coursera_Auto_Quiz](https://github.com/erichung9060/Coursera_Auto_Quiz) with AI support for quiz, please checkout!
 
 # Coursera Auto Complete
+
 
 A chrome extension that can help you finish all the video and reading instantly!
 
